@@ -12,13 +12,18 @@ struct images_swiftui: View {
         Image("um")
             //.renderingMode(.template)
             .resizable()
-            //.frame(width: 300, height: 100)
+            //.frame(width: 300, height: 200)
             .aspectRatio(contentMode: .fit)
             .clipped()
             //.cornerRadius(10)
-            .clipShape(Circle())
+            //.clipShape(Circle())
 //            .foregroundColor(.red)
-           
+            .overlay(alignment: .bottom) {
+                Text("hello")
+        
+                
+            }
+             
     }
 }
 
